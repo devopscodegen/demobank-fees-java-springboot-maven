@@ -6,7 +6,7 @@ public class TransactionFeesRequest {
     private Double amount;
     private String currency;
 
-    public TransactionFeesRequest(Double amount, String currency) {
+    public TransactionFeesRequest(String transactionType, Double amount, String currency) {
         super();
 
         this.setTransactionType(transactionType);
@@ -25,7 +25,7 @@ public class TransactionFeesRequest {
     public void setTransactionType(String transactionType) {
         this.transactionType = transactionType;
     }
-    
+
     public Double getAmount() {
         return amount;
     }
