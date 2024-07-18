@@ -7,10 +7,10 @@ public class TransactionFees {
     private Double amount;
     private String currency;
     private FeesStatus feesStatus;
-    private double fees;
+    private Double fees;
     private String feesCurrency;
 
-    public TransactionFees(TransactionType transactionType, Double amount, String currency, FeesStatus feesStatus, double fees, String feesCurrency) {
+    public TransactionFees(TransactionType transactionType, Double amount, String currency, FeesStatus feesStatus, Double fees, String feesCurrency) {
         super();
 
         this.setTransactionType(transactionType);
@@ -57,11 +57,11 @@ public class TransactionFees {
         this.feesStatus = feesStatus;
     }
 
-    public double getFees() {
+    public Double getFees() {
         return fees;
     }
 
-    public void setFees(double fees) {
+    public void setFees(Double fees) {
         this.fees = fees;
     }
 
