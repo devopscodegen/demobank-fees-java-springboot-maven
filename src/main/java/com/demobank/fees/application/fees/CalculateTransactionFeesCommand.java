@@ -1,12 +1,14 @@
 package com.demobank.fees.application.fees;
 
+import java.math.BigDecimal;
+
 public class CalculateTransactionFeesCommand {
 
     private String transactionType;
-    private Double amount;
+    private BigDecimal amount;
     private String currency;
 
-    public CalculateTransactionFeesCommand(String transactionType, Double amount, String currency) {
+    public CalculateTransactionFeesCommand(String transactionType, BigDecimal amount, String currency) {
         super();
 
         this.setTransactionType(transactionType);
@@ -22,15 +24,15 @@ public class CalculateTransactionFeesCommand {
         return transactionType;
     }
 
-    public void setTransactionType(String transactionType) {
+    private void setTransactionType(String transactionType) {
         this.transactionType = transactionType;
     }
 
-    public Double getAmount() {
+    public BigDecimal getAmount() {
         return amount;
     }
 
-    public void setAmount(Double amount) {
+    private void setAmount(BigDecimal amount) {
         this.amount = amount;
     }
 
@@ -38,7 +40,7 @@ public class CalculateTransactionFeesCommand {
         return currency;
     }
 
-    public void setCurrency(String currency) {
+    private void setCurrency(String currency) {
         this.currency = currency;
     }
 }

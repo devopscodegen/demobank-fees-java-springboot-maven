@@ -1,4 +1,4 @@
-package com.demobank.fees.domain.model.transaction;
+package com.demobank.fees.domain.model.account.transaction;
 
 public enum TransactionType {
 

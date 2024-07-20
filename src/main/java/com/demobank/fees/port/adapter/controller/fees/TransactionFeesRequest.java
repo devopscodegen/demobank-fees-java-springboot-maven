@@ -1,17 +1,19 @@
 package com.demobank.fees.port.adapter.controller.fees;
 
+import java.math.BigDecimal;
+
 public class TransactionFeesRequest {
 
     private String transactionType;
-    private Double amount;
-    private String currency;
+    private BigDecimal amount;
+    private String currencyCode;
 
-    public TransactionFeesRequest(String transactionType, Double amount, String currency) {
+    public TransactionFeesRequest(String transactionType, BigDecimal amount, String currencyCode) {
         super();
 
         this.setTransactionType(transactionType);
         this.setAmount(amount);
-        this.setCurrency(currency);
+        this.setCurrencyCode(currencyCode);
     }
 
     public TransactionFeesRequest() {
@@ -22,23 +24,23 @@ public class TransactionFeesRequest {
         return transactionType;
     }
 
-    public void setTransactionType(String transactionType) {
+    private void setTransactionType(String transactionType) {
         this.transactionType = transactionType;
     }
 
-    public Double getAmount() {
+    public BigDecimal getAmount() {
         return amount;
     }
 
-    public void setAmount(Double amount) {
+    private void setAmount(BigDecimal amount) {
         this.amount = amount;
     }
 
-    public String getCurrency() {
-        return currency;
+    public String getCurrencyCode() {
+        return currencyCode;
     }
 
-    public void setCurrency(String currency) {
-        this.currency = currency;
+    private void setCurrencyCode(String currencyCode) {
+        this.currencyCode = currencyCode;
     }
 }

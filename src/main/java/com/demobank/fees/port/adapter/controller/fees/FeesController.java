@@ -22,11 +22,11 @@ public class FeesController {
             new CalculateTransactionFeesCommand(
                 request.getTransactionType(),
                 request.getAmount(), 
-                request.getCurrency()));
+                request.getCurrencyCode()));
                 
         return new TransactionFeesResponse(
             transactionFees.getStatus().toString(), 
-            transactionFees.getFees(),
-            transactionFees.getFeesCurrency());
+            transactionFees.getFees().getAmount(),
+            transactionFees.getFees().getCurrencyCode().toString());
     }
 }

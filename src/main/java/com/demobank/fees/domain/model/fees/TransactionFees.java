@@ -1,24 +1,21 @@
 package com.demobank.fees.domain.model.fees;
 
-import com.demobank.fees.domain.model.transaction.TransactionType;
+import com.demobank.fees.domain.model.account.transaction.TransactionType;
+import com.demobank.fees.domain.model.money.Money;
 
 public class TransactionFees {
     private TransactionType transactionType;
-    private Double amount;
-    private String currency;
+    private Money amount;
     private FeesStatus feesStatus;
-    private Double fees;
-    private String feesCurrency;
+    private Money fees;
 
-    public TransactionFees(TransactionType transactionType, Double amount, String currency, FeesStatus feesStatus, Double fees, String feesCurrency) {
+    public TransactionFees(TransactionType transactionType, Money amount, FeesStatus feesStatus, Money fees) {
         super();
 
         this.setTransactionType(transactionType);
         this.setAmount(amount);
-        this.setCurrency(currency);
         this.setStatus(feesStatus);
         this.setFees(fees);
-        this.setFeesCurrency(feesCurrency);
     }
 
     public TransactionFees() {
@@ -29,47 +26,31 @@ public class TransactionFees {
         return transactionType;
     }
 
-    public void setTransactionType(TransactionType transactionType) {
+    private void setTransactionType(TransactionType transactionType) {
         this.transactionType = transactionType;
     }
 
-    public Double getAmount() {
+    public Money getAmount() {
         return amount;
     }
 
-    public void setAmount(Double amount) {
+    private void setAmount(Money amount) {
         this.amount = amount;
-    }
-
-    public String getCurrency() {
-        return currency;
-    }
-
-    public void setCurrency(String currency) {
-        this.currency = currency;
     }
 
     public FeesStatus getStatus() {
         return feesStatus;
     }
 
-    public void setStatus(FeesStatus feesStatus) {
+    private void setStatus(FeesStatus feesStatus) {
         this.feesStatus = feesStatus;
     }
 
-    public Double getFees() {
+    public Money getFees() {
         return fees;
     }
 
-    public void setFees(Double fees) {
+    private void setFees(Money fees) {
         this.fees = fees;
-    }
-
-    public String getFeesCurrency() {
-        return feesCurrency;
-    }
-
-    public void setFeesCurrency(String feesCurrency) {
-        this.feesCurrency = feesCurrency;
     }
 }
