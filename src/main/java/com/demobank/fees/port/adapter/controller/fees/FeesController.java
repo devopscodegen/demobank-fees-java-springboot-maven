@@ -1,5 +1,6 @@
 package com.demobank.fees.port.adapter.controller.fees;
 
+import org.jmolecules.architecture.hexagonal.Adapter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -12,6 +13,7 @@ import com.demobank.fees.domain.model.fees.TransactionFees;
 
 @RestController
 @RequestMapping("/api/v1/fees")
+@Adapter
 public class FeesController {
     @Autowired
     private TransactionFeesApplicationService transactionFeesApplicationService;
@@ -25,7 +27,7 @@ public class FeesController {
                 request.getCurrencyCode()));
                 
         return new TransactionFeesResponse(
-            transactionFees.getStatus().toString(), 
+            transactionFees.getFeesStatus().toString(), 
             transactionFees.getFees().getAmount(),
             transactionFees.getFees().getCurrencyCode().toString());
     }

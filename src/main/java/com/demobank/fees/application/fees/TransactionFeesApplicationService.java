@@ -2,6 +2,7 @@ package com.demobank.fees.application.fees;
 
 import java.math.BigDecimal;
 
+import org.jmolecules.architecture.hexagonal.Application;
 import org.springframework.stereotype.Service;
 
 import com.demobank.fees.domain.model.fees.TransactionFees;
@@ -11,6 +12,7 @@ import com.demobank.fees.domain.model.currency.CurrencyCode;
 import com.demobank.fees.domain.model.fees.FeesStatus;
 
 @Service
+@Application
 public class TransactionFeesApplicationService {
 
     public TransactionFees calculateTransactionFees(CalculateTransactionFeesCommand aCommand) {

@@ -1,5 +1,8 @@
 package com.demobank.fees.domain.model.account.transaction;
 
+import org.jmolecules.ddd.annotation.ValueObject;
+
+@ValueObject
 public enum TransactionType {
 
     WITHDRAW {

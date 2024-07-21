@@ -1,5 +1,8 @@
 package com.demobank.fees.domain.model.currency;
 
+import org.jmolecules.ddd.annotation.ValueObject;
+
+@ValueObject
 public enum CurrencyCode {
 
     USD {
