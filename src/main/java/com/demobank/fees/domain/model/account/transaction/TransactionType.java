@@ -5,33 +5,33 @@ import org.jmolecules.ddd.annotation.ValueObject;
 @ValueObject
 public enum TransactionType {
 
-    WITHDRAW {
-        public boolean isWithdraw() {
+    DEBIT {
+        public boolean isDebit() {
             return true;
         }
     },
 
-    DEPOSIT {
-        public boolean isDeposit() {
+    CREDIT {
+        public boolean isCredit() {
             return true;
         }
     };
 
-    public boolean isWithdraw() {
+    public boolean isDebit() {
         return false;
     }
 
-    public boolean isDeposit() {
+    public boolean isCredit() {
         return false;
     }
 
     public TransactionType regress() {
-        if (this.isWithdraw()) {
-            return WITHDRAW;
-        } else if (this.isDeposit()) {
-            return DEPOSIT;
+        if (this.isDebit()) {
+            return DEBIT;
+        } else if (this.isCredit()) {
+            return CREDIT;
         }
 
-        return WITHDRAW;
+        return DEBIT;
     }
 }
