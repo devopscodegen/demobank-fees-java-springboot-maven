@@ -9,7 +9,8 @@
       "label": "Run",
       "options": {
         "env": {
-            "SERVER_PORT": "8081"
+            "SERVER_PORT": "8081",
+            "MANAGEMENT_SERVER_PORT": "9081"
         }
       },
       "problemMatcher": [],
