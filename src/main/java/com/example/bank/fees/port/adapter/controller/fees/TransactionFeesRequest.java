@@ -1,4 +1,4 @@
-package com.demobank.fees.port.adapter.controller.fees;
+package com.example.bank.fees.port.adapter.controller.fees;
 
 import java.math.BigDecimal;
 

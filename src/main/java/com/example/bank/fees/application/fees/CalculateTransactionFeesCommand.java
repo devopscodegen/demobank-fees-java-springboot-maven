@@ -1,4 +1,4 @@
-package com.demobank.fees.port.adapter.controller.fees;
+package com.example.bank.fees.application.fees;
 
 import java.math.BigDecimal;
 
@@ -15,8 +15,9 @@ import lombok.ToString;
 @NoArgsConstructor
 @EqualsAndHashCode
 @ToString
-public class TransactionFeesResponse {
-    private String status;
-    private BigDecimal fees;
-    private String feesCurrencyCode;
+public class CalculateTransactionFeesCommand {
+
+    private String transactionType;
+    private BigDecimal amount;
+    private String currency;
 }

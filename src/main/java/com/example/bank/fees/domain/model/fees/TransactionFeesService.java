@@ -1,11 +1,11 @@
-package com.demobank.fees.domain.model.fees;
+package com.example.bank.fees.domain.model.fees;
 
 import java.math.BigDecimal;
 
 import org.springframework.stereotype.Service;
 
-import com.demobank.fees.domain.model.money.Money;
-import com.demobank.fees.domain.model.account.transaction.TransactionType;
+import com.example.bank.fees.domain.model.money.Money;
+import com.example.bank.fees.domain.model.account.transaction.TransactionType;
 
 @Service
 @org.jmolecules.ddd.annotation.Service

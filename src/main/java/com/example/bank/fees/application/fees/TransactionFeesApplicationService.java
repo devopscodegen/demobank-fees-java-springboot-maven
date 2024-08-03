@@ -1,14 +1,14 @@
-package com.demobank.fees.application.fees;
+package com.example.bank.fees.application.fees;
 
 import org.jmolecules.architecture.hexagonal.Application;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.demobank.fees.domain.model.fees.TransactionFees;
-import com.demobank.fees.domain.model.fees.TransactionFeesService;
-import com.demobank.fees.domain.model.money.Money;
-import com.demobank.fees.domain.model.account.transaction.TransactionType;
-import com.demobank.fees.domain.model.currency.CurrencyCode;
+import com.example.bank.fees.domain.model.fees.TransactionFees;
+import com.example.bank.fees.domain.model.fees.TransactionFeesService;
+import com.example.bank.fees.domain.model.money.Money;
+import com.example.bank.fees.domain.model.account.transaction.TransactionType;
+import com.example.bank.fees.domain.model.currency.CurrencyCode;
 
 @Service
 @Application

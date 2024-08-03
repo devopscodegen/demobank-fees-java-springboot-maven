@@ -1,4 +1,4 @@
-package com.demobank.fees.domain.model.money;
+package com.example.bank.fees.domain.model.money;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -7,7 +7,7 @@ import java.util.Objects;
 import org.jmolecules.ddd.annotation.ValueObject;
 import org.springframework.util.Assert;
 
-import com.demobank.fees.domain.model.currency.CurrencyCode;
+import com.example.bank.fees.domain.model.currency.CurrencyCode;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

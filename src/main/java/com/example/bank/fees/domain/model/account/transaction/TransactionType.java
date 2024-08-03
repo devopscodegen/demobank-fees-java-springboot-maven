@@ -1,4 +1,4 @@
-package com.demobank.fees.domain.model.account.transaction;
+package com.example.bank.fees.domain.model.account.transaction;
 
 import org.jmolecules.ddd.annotation.ValueObject;
 

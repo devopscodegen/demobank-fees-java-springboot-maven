@@ -1,9 +1,9 @@
-package com.demobank.fees.domain.model.fees;
+package com.example.bank.fees.domain.model.fees;
 
 import org.jmolecules.ddd.annotation.ValueObject;
 
-import com.demobank.fees.domain.model.account.transaction.TransactionType;
-import com.demobank.fees.domain.model.money.Money;
+import com.example.bank.fees.domain.model.account.transaction.TransactionType;
+import com.example.bank.fees.domain.model.money.Money;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

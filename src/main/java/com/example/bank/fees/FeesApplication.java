@@ -1,4 +1,4 @@
-package com.demobank.fees;
+package com.example.bank.fees;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
