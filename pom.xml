@@ -12,7 +12,7 @@
 	<artifactId>fees</artifactId>
 	<version>1.0.0</version>
 	<name>fees</name>
-	<description>Fees Application Component of Demo Bank</description>
+	<description>Fees component of app01 application of orgunit01 organizational unit of example-bank organisation</description>
 	<url>https://github.com/example-bank/orgunit01-app01-fees</url>
 	<licenses>
 		<license>
